@@ -1,0 +1,18 @@
+﻿@page "{restaurantId:int}"
+@model CoreApplication.Pages.Restaurants.DetailModel
+@{
+    ViewData["Title"] = "Detail";
+}
+
+<h2>@Model.Restaurant.Name</h2>
+<div>
+    @Model.Restaurant.Id
+</div>
+<div>
+    @Model.Restaurant.Location
+</div>
+<div>
+    Cusine: @Model.Restaurant.Cusine
+</div>
+
+<a asp-page="./List" class="btn btn-default">All Restaurants</a>
